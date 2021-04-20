@@ -32,7 +32,8 @@ setPrintConfig({
 })
 print('foo2')
 ```
-![mov](img/show.gif)
+![mov](http://img.givencui.com/2021-04-20-%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91.gif)
+
 ## Contributors
 - Given Cui [blog](http://givencui.com)
 
