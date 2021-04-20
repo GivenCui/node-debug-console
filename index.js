@@ -27,7 +27,7 @@ const getText = (config) => {
 const _console = console.log
 
 let printConfig = {
-    context: __dirname,
+    context: process.cwd(),
     contentLength: 100
 }
 let prefix = getStyle('gray', '... ')
