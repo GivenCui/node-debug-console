@@ -14,3 +14,7 @@ println('bar2')
 setPrintConfig({ context: '../' })
 println('foo1')
 
+// 复写全局的 console.log
+console.log = print.bind(null)
+
+console.log(123)

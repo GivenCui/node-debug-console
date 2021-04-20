@@ -24,6 +24,8 @@ const getText = (config) => {
     return /\\|\//ig.test(strLineErr) ? `💡 ${getStyle('magenta', temp.fileName)}${getStyle('gray', ' L:')}${getStyle('green', temp.lineNum)}` : undefined
 }
 
+const _console = console.log
+
 let printConfig = {
     context: __dirname,
     contentLength: 100
@@ -42,11 +44,11 @@ const print = (...args) => {
 
     let fixLength = printConfig.contentLength - getZhLength(content).length
     let gap = getStyle('gray', content.padEnd(fixLength, '  .').slice(content.length))
-    console.log(prefix, ...args, gap, tips)
+    _console(prefix, ...args, gap, tips)
 }
 const println = (...args) => {
-    console.log(getText(printConfig))
-    console.log(prefix, ...args, '\n')
+    _console(getText(printConfig))
+    _console(prefix, ...args, '\n')
 }
 const setPrintConfig = (config) => {
     printConfig = Object.assign(printConfig, config)
