@@ -1,7 +1,7 @@
 {
     "name": "node-debug-console",
     "version": "1.0.0",
-    "author": "Given Cui",
+    "author": "GivenCui",
     "license": "MIT",
     "description": "a debug tool beautifying console.log in node environment",
     "main": "index.js",
