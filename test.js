@@ -11,7 +11,7 @@ print('foo2')
 
 println('bar2')
 // 设置参考路径
-setPrintConfig({ context: '../' })
+setPrintConfig({ context: './img' })
 println('foo1')
 
 // 复写全局的 console.log

@@ -21,7 +21,10 @@ const getText = (config) => {
     temp.lineNum = +arrErrResult.pop()
     temp.fileName = '/' + arrErrResult.slice(1).join('/')
     temp.fileName = path.relative(config.context, temp.fileName)
-    return /\\|\//ig.test(strLineErr) ? `💡 ${getStyle('magenta', temp.fileName)}${getStyle('gray', ' L:')}${getStyle('green', temp.lineNum)}` : undefined
+    if (/^[^\.\/]/.test(temp.fileName)) {
+        temp.fileName = './' + temp.fileName
+    }
+    return /\\|\//ig.test(strLineErr) ? `💡 ${getStyle('magenta', temp.fileName)}${getStyle('gray', ':')}${getStyle('green', temp.lineNum)}` : undefined
 }
 
 const _console = console.log
