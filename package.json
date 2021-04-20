@@ -1,0 +1,20 @@
+{
+    "name": "node-debug-console",
+    "version": "1.0.0",
+    "author": "Given Cui",
+    "license": "MIT",
+    "description": "a debug tool beautifying console.log in node environment",
+    "main": "index.js",
+    "keywords": [
+        "log",
+        "node"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/GivenCui/node-debug-console.git"
+    },
+    "homepage": "https://github.com/GivenCui/node-debug-console.git",
+    "scripts": {
+        "test": "node test.js"
+    }
+}
